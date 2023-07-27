@@ -10,4 +10,5 @@ Then use `CamelCase`.
 ## classes
 
 ### Organization
-At the top should be properties, then the constuctor, 
+At the top should be:
+  1.
