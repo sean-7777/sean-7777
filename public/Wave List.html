@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave List</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#wave-list">Wave List</a>
+<ul>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="wave-list">Wave List</h1>
+<h2 id="usage">Usage</h2>
+<dl>
+<dt><code>&lt;wave-list width=[number] manuallinebreak?&gt;</code></dt>
+<dd>The wrapper for the wave list which is the main component. The attribute <code>width</code> should be a number which will change the size of the entire list. <code>manuallinebreak</code> is a boolean attribute and will override <code>width</code>. It will automatically set the wave list’s width so that all content can fit on one line. It should be used with <code>&lt;br&gt;</code>.</dd>
+<dt><code>&lt;list-title width=[number] color=[string]&gt;</code></dt>
+<dd>Defines the title for the wave list. Argument usage exactly the same as <code>&lt;list-item&gt;</code>.</dd>
+<dt><code>&lt;list-item width=[number] color=[string]&gt;</code></dt>
+<dd>Defines a item for the wave list. Should be only used in the body of <code>&lt;wave-list&gt;</code>. <code>width</code> is a number that will define the width of the item. <code>color</code> is any valid CSS3 color keyword, hex code, or RGB/HSL function.</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="basic">Basic</h3>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wave-list</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-title</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sample Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List Item 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>orange<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List Item 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>The Last List Item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>wave-list</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="widths">Widths</h3>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wave-list</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>200<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> <span class="token comment">&lt;!-- Double width --&gt;</span>
+  <span class="token comment">&lt;!-- Slightly smaller width --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-title</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>75<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sample Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List Item 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- Longer item width --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>orange<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>130<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List Item 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>The Last List Item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>wave-list</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="manual-line-breaks">Manual Line Breaks</h3>
+<pre class=" language-html"><code class="prism  language-html"><span class="token comment">&lt;!------------------------------------------------------------!&gt;
+&lt;!   Scroll horizontally to view the entire line              !&gt;
+&lt;!   Add the attribute and then use &lt;br&gt; to                   !&gt;
+&lt;!   manually specify line breaks                             !&gt;
+&lt;!   Note that adding width will not do anything              !&gt;
+&lt;!-------------------------------------------------------------&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wave-list</span> <span class="token attr-name">manuallinebreak</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-title</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sample Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Some content for the item.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- Longer item width --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>orange<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>130<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List Item 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>```
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>list-item</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>consectetur adipiscing elit, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>euismod rhoncus habitant eget et mauris, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>parturient urna facilisi inceptos fusce purus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>list-title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>wave-list</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><br><br></p>
+<hr>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+
+    </div>
+  </div>
+</body>
+
+</html>
