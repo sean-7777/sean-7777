@@ -4,4 +4,4 @@
 
 <br><br>
 
-![langs](./langs.svg) ![wakatime](./wakatime.svg?v=3)
+![langs](./langs.svg) ![wakatime](./wakatime.svg?v=3asdf#ffffffffffffffffffffffffffffzz)
