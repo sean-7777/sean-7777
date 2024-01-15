@@ -7,5 +7,5 @@
   <img align="center" src="./langs.svg?v=1" />
 </a>
 <a href="https://github.com/sean-7777">
-  <img align="center" src="./wakatime.svg?v=1" />
+  <img align="center" src="./wakatime.svg?v=2" />
 </a>
