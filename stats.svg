@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="467" height="320" viewBox="0 0 467 320" fill="none" role="img" aria-labelledby="descId">
-  <title id="titleId">sean's GitHub Stats, Rank: S++</title>
+  <title id="titleId">sean's github stats, Rank: S++</title>
   <desc id="descId">Total Stars Earned: 52856, Total Commits  : 396395, Total PRs: 1983, Total PRs Merged: 1803, Merged PRs Percentage: 90.92, Total PRs Reviewed: 2103, Total Issues: 8002, Total Discussions Started: 817, Total Discussions Answered: 1203, Contributed to (last year): 93</desc>
   <style>.header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -91,7 +91,7 @@
   <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="466" fill="#282a36" stroke-opacity="1" />
   <g data-testid="card-title" transform="translate(25, 35)">
     <g transform="translate(0, 0)">
-      <text x="0" y="0" class="header" data-testid="header">sean's GitHub Stats</text>
+      <text x="0" y="0" class="header" data-testid="header">sean's github stats</text>
     </g>
   </g>
   <g data-testid="main-card-body" transform="translate(0, 55)">
