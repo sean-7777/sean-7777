@@ -1,5 +1,9 @@
 # hi lol
 idk some profile cards ig:
 
-![sean's github stats](./stats.svg?v=2)
-![sean's most used languages](./langs.svg?v=1)
+<a href="https://github.com/sean-7777">
+  <img align="center" src="./stats.svg?v=2" />
+</a>
+<a href="https://github.com/sean-7777">
+  <img align="center" src="./langs.svg?v=1" />
+</a>
