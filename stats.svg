@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="467" height="320" viewBox="0 0 467 320" fill="none" role="img" aria-labelledby="descId">
-  <title id="titleId">sean's GitHub Stats, Rank: S+</title>
+  <title id="titleId">sean's GitHub Stats, Rank: S++</title>
   <desc id="descId">Total Stars Earned: 52856, Total Commits  : 396395, Total PRs: 1983, Total PRs Merged: 1803, Merged PRs Percentage: 90.92, Total PRs Reviewed: 2103, Total Issues: 8002, Total Discussions Started: 817, Total Discussions Answered: 1203, Contributed to (last year): 93</desc>
   <style>.header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -99,7 +99,7 @@
       <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
       <circle class="rank-circle" cx="-10" cy="8" r="40" />
       <g class="rank-text">
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">S+</text>
+        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">S++</text>
       </g>
     </g>
     <svg x="0" y="0">
