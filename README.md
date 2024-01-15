@@ -9,4 +9,5 @@
 <!-- <a href="https://github.com/sean-7777">
   <img align="center" src="./wakatime.svg?v=3^asdf" />
 </a> -->
-!(a)[./wakatime.svg]
+
+![a](./wakatime.svg)
